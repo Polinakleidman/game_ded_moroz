@@ -15,7 +15,7 @@ def start_level(number_of_level):
     now_level = 'level' + str(number_of_level) + '.lvl'
 
     def load_image(name, colorkey=None):
-        fullname = os.path.join('C:\data', name)
+        fullname = os.path.join(name)
         image = pygame.image.load(fullname)
         if colorkey is not None:
              if colorkey == -1:
@@ -146,7 +146,7 @@ def start_level(number_of_level):
 
 
     class Player(pygame.sprite.Sprite):
-        image = load_image('безымян.png', 1)
+        image = load_image('player.png', 1)
 
         def __init__(self, pos_x, pos_y):
             super().__init__(player_group, all_sprites)

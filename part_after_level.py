@@ -12,7 +12,7 @@ FPS = 50
 
 def winner(im):
     def load_image(name, colorkey=None):
-        fullname = os.path.join('C:\data', name)
+        fullname = os.path.join(name)
         image = pygame.image.load(fullname)
         if colorkey is not None:
             if colorkey == -1:
