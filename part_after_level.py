@@ -88,4 +88,6 @@ def winner(im):
         pygame.display.flip()
         clock.tick(50)
 
+    running = True
+
     #pygame.quit()

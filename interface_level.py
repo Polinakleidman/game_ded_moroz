@@ -242,3 +242,5 @@ def start_level(number_of_level):
     else:
         from part_after_level import winner
         winner("sad1.png")
+        print(2)
+    print(1)
