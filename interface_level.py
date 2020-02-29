@@ -79,7 +79,7 @@ def start_level(number_of_level):
 
 
     def load_level(filename):
-        filename = os.path.join('C:\data', filename)
+        filename = os.path.join(filename)
         # читаем уровень, убирая символы перевода строки
         print(filename)
         with open(filename, 'r') as mapFile:
